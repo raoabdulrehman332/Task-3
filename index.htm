@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+
+    <style>
+        h1{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h2{
+            margin-left: 20px;
+        }
+        .ans{
+            margin-left: 50px;
+            text-align: center;
+            justify-content: left;
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task-3</h1>
+    <h2>Q3: 
+        Write a JavaScript program to find out if 1st January will be a Sunday <br>
+        between 2024 and 2050. <br>
+    </h2> 
+
+    <script>
+      // 1st logic
+        // for (let i = 2024; i <= 2050; i++) {
+        //     var now = new Date(i , 0 ,1);  
+        //     if (now.toString().slice(0 , 0+3) == "Sun") {
+        //         console.log(`1st jan on Sunday : ${i}`);
+                
+        //     }
+            
+        // }
+
+
+        // 2nd logic
+        //    var sunday = 0;
+        //  for (let i = 2024; i <= 2050; i++) {
+        //     var now = new Date(i , 0 ,1); 
+        //     var day = now.getDay() ;
+        //     if (day == 0) {
+        //         console.log(`1st jan on Sunday : ${i}`);
+                
+        //     }
+            
+        // }
+        
+         for (let i = 2024; i <= 2050; i++) {
+            var now = new Date(i , 0 ,1);  
+            if (now.toString().slice(0 , 0+3) == "Sun") {
+             
+                document.write(`<h1 class="ans">1st jan on Sunday : ${i}`)
+                
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>
